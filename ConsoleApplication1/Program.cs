@@ -34,11 +34,11 @@ namespace ConsoleApplication1
             //}
             //var total = list.Sum(x => x.Right);
 
-            //var random = new Random();
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    Console.WriteLine(random.Next(1) + "，恭喜您！");
-            //}
+            var random = new Random();
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine(random.Next(1) + "，恭喜您！");
+            }
             string[] strs = new[] {"123", "456", "789"};
             Console.WriteLine(strs.Any(m => "1s,789".Split(',').Contains(m)));
             Console.WriteLine(strs.Intersect("1s,789".Split(',')).Any());
